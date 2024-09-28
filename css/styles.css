@@ -31,6 +31,7 @@ body {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -63,6 +64,20 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     display: block;
+    position: relative;
+}
+
+.menu-link::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+
+
 }
 
 .menu-link:hover,
@@ -76,6 +91,7 @@ body {
     font-style: normal;
     align-items: center;
     gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info-item {
@@ -100,6 +116,7 @@ body {
 .menu {
     display: flex;
     gap: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info {
@@ -111,7 +128,7 @@ body {
 
 
 /* Main Styles */
-/* features */
+/* HERO */
 .hero-head {
     font-weight: 700;
     font-size: 56px;
@@ -147,8 +164,14 @@ body {
 .hero-back {
     background-color: #2e2f42;
     padding: 188px 0 188px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/background.jpg);
+
 }
 
+/* FEATURES */
 
 .features-headders {
     font-weight: 500;
@@ -174,10 +197,28 @@ body {
 
 .features-item {
     width: calc((100% - 72px) / 4);
-
 }
 
 /* team */
+
+.social-list {
+    display: flex;
+}
+
+.social-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #404BBF;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+
+}
+
+
 
 .team-list {
     display: flex;
