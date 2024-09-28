@@ -168,6 +168,7 @@ body {
 }
 
 .hero-back {
+    display: flex;
     background-color: #2e2f42;
     padding: 188px 0 188px;
     background-repeat: no-repeat;
