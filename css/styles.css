@@ -177,6 +177,7 @@ body {
         url(../images/background.jpg);
     max-width: 1440px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
 
 }
 
@@ -244,7 +245,8 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover.social-link:active {
+.social-link:hover,
+.social-link:focus {
     background-color: #404bbf;
 }
 
@@ -350,7 +352,7 @@ body {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-item:hover.portfolio-paragraph {
+li:hover .portfolio-image .portfolio-paragraph {
     transform: translateY(0%);
 }
 
@@ -410,7 +412,7 @@ body {
 }
 
 .footer-item-link:hover,
-.footer-item-link:active {
+.footer-item-link:focus {
     background-color: #31d0aa;
 }
 
