@@ -182,10 +182,7 @@ body {
     z-index: 1;
 }
 
-.hero-back-wrapper {
-    overflow: hidden;
-    position: relative;
-}
+
 
 .hero-back::before {
     content: "";
